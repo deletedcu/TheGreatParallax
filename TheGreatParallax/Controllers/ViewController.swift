@@ -1,6 +1,6 @@
 import UIKit
 
-final class ViewController: UIViewController {
+class ViewController: PageItemBaseViewController {
     
     private enum Section: Int, CaseIterable {
         case original = 0
@@ -16,6 +16,12 @@ final class ViewController: UIViewController {
         }
     }
 
+    var parentPagingOffset: CGPoint? {
+        didSet {
+            applyParallax()
+        }
+    }
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private weak var originalHeaderReusableView: FeedOriginalHeaderReusableView?
@@ -38,6 +44,8 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+        
         collectionView.register(UINib(nibName: "\(FeedOriginalHeaderReusableView.self)", bundle: Bundle.main),
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FeedOriginalHeaderReusableView.reuseIdentifier)
         collectionView.register(UINib(nibName: "\(FeedHeaderCollectionViewCell.self)", bundle: Bundle.main), forCellWithReuseIdentifier: FeedHeaderCollectionViewCell.reuseIdentifier)
@@ -45,6 +53,31 @@ final class ViewController: UIViewController {
         
         collectionView.collectionViewLayout = StretchyHeaderCollectionViewFlowLayout()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        super.scrollViewDidScroll(scrollView)
+        applyParallax()
+    }
+    
+    func applyParallax() {
+        let offsetX = ((parentPagingOffset?.x ?? 0) - (self.view.frame.origin.x - self.view.frame.width)) / (2 * self.view.frame.width)
+        for row in collectionView.visibleCells {
+            if let cell = row as? ParallaxCollectionViewCell {
+                let offsetY = (cell.center.y + cell.bounds.height * 0.5 - collectionView.contentOffset.y) / (collectionView.bounds.height + cell.bounds.height)
+                cell.parallaxOffset = CGPoint(x: offsetX, y: offsetY)
+            }
+        }
+    }
+    
+//    func applyParallax(forCell cell: ParallaxCollectionViewCell) {
+//        let offsetX = ((parentPagingOffset?.x ?? 0) - (self.view.frame.origin.x - self.view.frame.width)) / (2 * self.view.frame.width)
+//        let offsetY = (cell.center.y + cell.bounds.height * 0.5 - collectionView.contentOffset.y) / (collectionView.bounds.height + cell.bounds.height)
+//        cell.parallaxOffset = CGPoint(x: offsetX, y: offsetY)
+//    }
     
     private func setSizeFotItemInCollectionView(itemsPerRow: CGFloat, paddingSpace: CGFloat, heightPerItem: CGFloat) -> CGSize {
         let itemsPerRow = itemsPerRow
