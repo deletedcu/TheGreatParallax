@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ParallaxCollectionViewCell.awakeFromNib():ParallaxCollectionViewCell.swift">
          <PersistentStrings>
             <PersistentString
@@ -15,6 +23,9 @@
                value = "parallaxFactor">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.applyParallax():ViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

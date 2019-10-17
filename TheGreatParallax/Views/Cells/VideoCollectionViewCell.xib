@@ -33,10 +33,12 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-Jj-FiV">
-                        <rect key="frame" x="144" y="92.5" width="53" height="34"/>
+                        <rect key="frame" x="143.5" y="92.5" width="54.5" height="34.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <size key="shadowOffset" width="2" height="1"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
