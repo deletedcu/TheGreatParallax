@@ -73,12 +73,6 @@ class ViewController: PageItemBaseViewController {
         }
     }
     
-//    func applyParallax(forCell cell: ParallaxCollectionViewCell) {
-//        let offsetX = ((parentPagingOffset?.x ?? 0) - (self.view.frame.origin.x - self.view.frame.width)) / (2 * self.view.frame.width)
-//        let offsetY = (cell.center.y + cell.bounds.height * 0.5 - collectionView.contentOffset.y) / (collectionView.bounds.height + cell.bounds.height)
-//        cell.parallaxOffset = CGPoint(x: offsetX, y: offsetY)
-//    }
-    
     private func setSizeFotItemInCollectionView(itemsPerRow: CGFloat, paddingSpace: CGFloat, heightPerItem: CGFloat) -> CGSize {
         let itemsPerRow = itemsPerRow
         let paddingSpace = paddingSpace
@@ -166,7 +160,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: 582)
+            return CGSize(width: collectionView.bounds.width, height: 569)
         default:
             return CGSize.zero
         }

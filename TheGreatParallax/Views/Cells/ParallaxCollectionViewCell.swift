@@ -38,7 +38,7 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
     // parallax factor that represents the amount of parallax in pixel
     var parallaxFactor: CGPoint {
         get {
-            return CGPoint(x: 70, y: 70)
+            return CGPoint(x: 100, y: 100)
         }
     }
     

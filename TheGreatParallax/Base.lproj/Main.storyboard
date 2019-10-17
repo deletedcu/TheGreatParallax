@@ -44,9 +44,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZjR-ap-niM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1RU-ke-wCL"/>
-                            <constraint firstAttribute="bottom" secondItem="ZjR-ap-niM" secondAttribute="bottom" id="C3A-y6-9GT"/>
+                            <constraint firstItem="ZjR-ap-niM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AUX-RE-zX7"/>
+                            <constraint firstAttribute="bottom" secondItem="ZjR-ap-niM" secondAttribute="bottom" id="QRS-Q1-b63"/>
                             <constraint firstItem="ZjR-ap-niM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cmr-Z7-fvd"/>
-                            <constraint firstItem="ZjR-ap-niM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zTK-Ed-lSJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
