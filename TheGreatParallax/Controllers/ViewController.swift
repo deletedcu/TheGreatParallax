@@ -44,7 +44,7 @@ class ViewController: PageItemBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.normal
         
         collectionView.register(UINib(nibName: "\(FeedOriginalHeaderReusableView.self)", bundle: Bundle.main),
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FeedOriginalHeaderReusableView.reuseIdentifier)
