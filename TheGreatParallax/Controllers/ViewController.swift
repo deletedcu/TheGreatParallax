@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: PageItemBaseViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     
     private enum Section: Int, CaseIterable {
         case original = 0
@@ -13,12 +13,6 @@ class ViewController: PageItemBaseViewController {
         
         init(_ section: Int) {
             self.init(rawValue: section)!
-        }
-    }
-
-    var parentPagingOffset: CGPoint? {
-        didSet {
-            applyParallax()
         }
     }
     
@@ -54,17 +48,12 @@ class ViewController: PageItemBaseViewController {
         collectionView.collectionViewLayout = StretchyHeaderCollectionViewFlowLayout()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        super.scrollViewDidScroll(scrollView)
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         applyParallax()
     }
     
     func applyParallax() {
-        let offsetX = ((parentPagingOffset?.x ?? 0) - (self.view.frame.origin.x - self.view.frame.width)) / (2 * self.view.frame.width)
+        let offsetX = (self.view.frame.width - self.view.frame.origin.x) / (2 * self.view.frame.width)
         for row in collectionView.visibleCells {
             if let cell = row as? ParallaxCollectionViewCell {
                 let offsetY = (cell.center.y + cell.bounds.height * 0.5 - collectionView.contentOffset.y) / (collectionView.bounds.height + cell.bounds.height)
@@ -160,7 +149,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: 569)
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 582 / 320 - 44)
         default:
             return CGSize.zero
         }

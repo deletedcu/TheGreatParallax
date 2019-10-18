@@ -4,21 +4,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedOriginalHeaderReusableView" id="U6b-Vx-4bR" customClass="FeedOriginalHeaderReusableView" customModule="TheGreatParallax" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FeedOriginalHeaderReusableView" id="U6b-Vx-4bR" customClass="FeedOriginalHeaderReusableView" customModule="TheGreatParallax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="582"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="bLn-Pn-oup">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="582"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJi-d6-czr">
-                    <rect key="frame" x="20" y="386.5" width="280" height="162.5"/>
+                    <rect key="frame" x="20" y="399.5" width="280" height="162.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zb3-1l-zKX">
                             <rect key="frame" x="20" y="20" width="240" height="122.5"/>
@@ -39,7 +38,7 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdD-6a-NWo">
                                     <rect key="frame" x="0.0" y="92.5" width="240" height="30"/>
-                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="BUTTON TO TAP">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -65,7 +64,6 @@
                 <constraint firstItem="bLn-Pn-oup" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="knh-ed-xCE"/>
                 <constraint firstItem="bLn-Pn-oup" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="nwn-mS-rf1"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Kul-1L-7ao"/>
             <connections>
                 <outlet property="textView" destination="cJi-d6-czr" id="ck4-fv-liq"/>
             </connections>
@@ -73,6 +71,6 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="header" width="320" height="569"/>
+        <image name="header" width="320" height="584"/>
     </resources>
 </document>

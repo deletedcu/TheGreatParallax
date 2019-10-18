@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         contextName = "closure #1 in StretchyHeaderCollectionViewFlowLayout.layoutAttributesForElements(in:):StretchyHeaderCollectionViewFlowLayout.swift">
          <PersistentStrings>
             <PersistentString
-               value = "collectionView">
+               value = "attributes.frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.applyParallax():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentPagingOffset">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -25,7 +33,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.applyParallax():ViewController.swift">
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "topPadding">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

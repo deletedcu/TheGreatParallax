@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FhV-rL-9Dt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,12 +43,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ZjR-ap-niM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1RU-ke-wCL"/>
+                            <constraint firstItem="ZjR-ap-niM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1RU-ke-wCL"/>
                             <constraint firstItem="ZjR-ap-niM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AUX-RE-zX7"/>
                             <constraint firstAttribute="bottom" secondItem="ZjR-ap-niM" secondAttribute="bottom" id="QRS-Q1-b63"/>
-                            <constraint firstItem="ZjR-ap-niM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cmr-Z7-fvd"/>
+                            <constraint firstItem="ZjR-ap-niM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="cmr-Z7-fvd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="Jc4-Pk-asu"/>
                     <connections>
