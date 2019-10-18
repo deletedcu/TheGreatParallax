@@ -3,10 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in StretchyHeaderCollectionViewFlowLayout.layoutAttributesForElements(in:):StretchyHeaderCollectionViewFlowLayout.swift">
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "attributes.frame.height">
+               value = "collectionView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +23,34 @@
          <PersistentStrings>
             <PersistentString
                value = "parentPagingOffset">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.contentOffset">
+            </PersistentString>
+            <PersistentString
+               value = "elementView.center.y">
+            </PersistentString>
+            <PersistentString
+               value = "elementView.bounds.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in StretchyHeaderCollectionViewFlowLayout.layoutAttributesForElements(in:):StretchyHeaderCollectionViewFlowLayout.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "attributes.frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ParallaxHeaderView.awakeFromNib():ParallaxHeaderView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parallaxBottomConstraint.constant">
+            </PersistentString>
+            <PersistentString
+               value = "parallaxTopConstraint.constant">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -29,22 +65,6 @@
             </PersistentString>
             <PersistentString
                value = "parallaxFactor">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.viewDidLoad():ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "collectionView">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

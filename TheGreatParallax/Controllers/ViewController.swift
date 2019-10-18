@@ -20,6 +20,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     private weak var originalHeaderReusableView: FeedOriginalHeaderReusableView?
     
+    private var statusBarHeight: CGFloat! = UIApplication.shared.statusBarFrame.height
+    
     private var sampleVideos: [Video] {
         return [
             Video(title: "One", placeholderImage: UIImage(named: "1")!),
@@ -38,6 +40,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSLog("statusBarHeight %@", statusBarHeight.description)
         collectionView.decelerationRate = UIScrollView.DecelerationRate.normal
         
         collectionView.register(UINib(nibName: "\(FeedOriginalHeaderReusableView.self)", bundle: Bundle.main),
@@ -60,6 +63,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 cell.parallaxOffset = CGPoint(x: offsetX, y: offsetY)
             }
         }
+        
+        if let elementView = collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)) as? ParallaxHeaderView {
+            if collectionView.contentOffset.y > 0 {
+                elementView.parallaxOffset = CGPoint(x: 0, y: collectionView.contentOffset.y)
+            }
+        }
+        
     }
     
     private func setSizeFotItemInCollectionView(itemsPerRow: CGFloat, paddingSpace: CGFloat, heightPerItem: CGFloat) -> CGSize {
@@ -149,7 +159,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 582 / 320 - 58)
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 568 / 320 - statusBarHeight)
         default:
             return CGSize.zero
         }

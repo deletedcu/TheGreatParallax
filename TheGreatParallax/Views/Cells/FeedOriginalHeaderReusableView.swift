@@ -1,6 +1,6 @@
 import UIKit
 
-final class FeedOriginalHeaderReusableView: UICollectionReusableView {
+final class FeedOriginalHeaderReusableView: ParallaxHeaderView {
     
     static let reuseIdentifier = "\(FeedOriginalHeaderReusableView.self)"
     
