@@ -100,6 +100,7 @@ extension ViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.reuseIdentifier, for: indexPath) as! VideoCollectionViewCell
             let video = sampleVideos[indexPath.row]
             cell.configure(video: video)
+            applyParallax()
             return cell
         }
     }

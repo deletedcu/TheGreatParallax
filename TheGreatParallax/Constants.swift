@@ -25,7 +25,7 @@ final class Constants {
     }
     
     static var headerImageHeight: CGFloat {
-        return 500
+        return 200
     }
     
     static var defaultSectionHeight: CGFloat {
@@ -33,7 +33,7 @@ final class Constants {
     }
     
     static var defaultCellHeight: CGFloat {
-        return 320
+        return 180
     }
     
     static var defaultParallaxOffset: CGPoint {

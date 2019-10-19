@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1859FA6B2356B7C800BCCB02 /* ParallaxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859FA6A2356B7C800BCCB02 /* ParallaxCollectionViewCell.swift */; };
+		1874FBB823524546005659AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBB723524546005659AB /* AppDelegate.swift */; };
+		1874FBBA23524546005659AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBB923524546005659AB /* SceneDelegate.swift */; };
+		1874FBBC23524546005659AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBBB23524546005659AB /* ViewController.swift */; };
+		1874FBBF23524546005659AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBBD23524546005659AB /* Main.storyboard */; };
+		1874FBC123524547005659AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBC023524547005659AB /* Assets.xcassets */; };
+		1874FBC423524547005659AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBC223524547005659AB /* LaunchScreen.storyboard */; };
+		1874FBCF23524548005659AB /* TheGreatParallaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBCE23524548005659AB /* TheGreatParallaxTests.swift */; };
+		1874FBDA23524548005659AB /* TheGreatParallaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBD923524548005659AB /* TheGreatParallaxUITests.swift */; };
+		1874FBE9235249E2005659AB /* FeedHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBE7235249E2005659AB /* FeedHeaderCollectionViewCell.swift */; };
+		1874FBEA235249E2005659AB /* FeedHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBE8235249E2005659AB /* FeedHeaderCollectionViewCell.xib */; };
+		1874FBF0235254C1005659AB /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBEE235254C1005659AB /* VideoCollectionViewCell.swift */; };
+		1874FBF1235254C1005659AB /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBEF235254C1005659AB /* VideoCollectionViewCell.xib */; };
+		1874FBF423525FEA005659AB /* FeedOriginalHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBF223525FEA005659AB /* FeedOriginalHeaderReusableView.swift */; };
+		1874FBF523525FEA005659AB /* FeedOriginalHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1874FBF323525FEA005659AB /* FeedOriginalHeaderReusableView.xib */; };
+		1874FBF7235265E3005659AB /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FBF6235265E3005659AB /* Video.swift */; };
+		18E04DCB2356AC4600852EB9 /* StretchyHeaderCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E04DCA2356AC4600852EB9 /* StretchyHeaderCollectionViewFlowLayout.swift */; };
+		3CA9530B235ABE37009CEAF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9530A235ABE37009CEAF7 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1874FBCB23524548005659AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1874FBAC23524546005659AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1874FBB323524546005659AB;
+			remoteInfo = TheGreatParallax;
+		};
+		1874FBD623524548005659AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1874FBAC23524546005659AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1874FBB323524546005659AB;
+			remoteInfo = TheGreatParallax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1859FA6A2356B7C800BCCB02 /* ParallaxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCollectionViewCell.swift; sourceTree = "<group>"; };
+		1874FBB423524546005659AB /* TheGreatParallax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGreatParallax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1874FBB723524546005659AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1874FBB923524546005659AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1874FBBB23524546005659AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1874FBBE23524546005659AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1874FBC023524547005659AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1874FBC323524547005659AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1874FBC523524547005659AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1874FBCA23524548005659AB /* TheGreatParallaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGreatParallaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1874FBCE23524548005659AB /* TheGreatParallaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGreatParallaxTests.swift; sourceTree = "<group>"; };
+		1874FBD023524548005659AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1874FBD523524548005659AB /* TheGreatParallaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGreatParallaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1874FBD923524548005659AB /* TheGreatParallaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGreatParallaxUITests.swift; sourceTree = "<group>"; };
+		1874FBDB23524548005659AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1874FBE7235249E2005659AB /* FeedHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		1874FBE8235249E2005659AB /* FeedHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		1874FBEE235254C1005659AB /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1874FBEF235254C1005659AB /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		1874FBF223525FEA005659AB /* FeedOriginalHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOriginalHeaderReusableView.swift; sourceTree = "<group>"; };
+		1874FBF323525FEA005659AB /* FeedOriginalHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedOriginalHeaderReusableView.xib; sourceTree = "<group>"; };
+		1874FBF6235265E3005659AB /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		18E04DCA2356AC4600852EB9 /* StretchyHeaderCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		3CA9530A235ABE37009CEAF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1874FBB123524546005659AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBC723524548005659AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBD223524548005659AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180CF44A2354BFC000ED3843 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBBB23524546005659AB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		180CF44B2354BFC900ED3843 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBF6235265E3005659AB /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		180CF44C2354BFDB00ED3843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBEB235249E8005659AB /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1874FBAB23524546005659AB = {
+			isa = PBXGroup;
+			children = (
+				1874FBB623524546005659AB /* TheGreatParallax */,
+				1874FBCD23524548005659AB /* TheGreatParallaxTests */,
+				1874FBD823524548005659AB /* TheGreatParallaxUITests */,
+				1874FBB523524546005659AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1874FBB523524546005659AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBB423524546005659AB /* TheGreatParallax.app */,
+				1874FBCA23524548005659AB /* TheGreatParallaxTests.xctest */,
+				1874FBD523524548005659AB /* TheGreatParallaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1874FBB623524546005659AB /* TheGreatParallax */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBB723524546005659AB /* AppDelegate.swift */,
+				1874FBB923524546005659AB /* SceneDelegate.swift */,
+				180CF44B2354BFC900ED3843 /* Models */,
+				180CF44A2354BFC000ED3843 /* Controllers */,
+				180CF44C2354BFDB00ED3843 /* Views */,
+				18E04DCA2356AC4600852EB9 /* StretchyHeaderCollectionViewFlowLayout.swift */,
+				1874FBBD23524546005659AB /* Main.storyboard */,
+				1874FBC023524547005659AB /* Assets.xcassets */,
+				1874FBC223524547005659AB /* LaunchScreen.storyboard */,
+				1874FBC523524547005659AB /* Info.plist */,
+				3CA9530A235ABE37009CEAF7 /* Constants.swift */,
+			);
+			path = TheGreatParallax;
+			sourceTree = "<group>";
+		};
+		1874FBCD23524548005659AB /* TheGreatParallaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBCE23524548005659AB /* TheGreatParallaxTests.swift */,
+				1874FBD023524548005659AB /* Info.plist */,
+			);
+			path = TheGreatParallaxTests;
+			sourceTree = "<group>";
+		};
+		1874FBD823524548005659AB /* TheGreatParallaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1874FBD923524548005659AB /* TheGreatParallaxUITests.swift */,
+				1874FBDB23524548005659AB /* Info.plist */,
+			);
+			path = TheGreatParallaxUITests;
+			sourceTree = "<group>";
+		};
+		1874FBEB235249E8005659AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1859FA6A2356B7C800BCCB02 /* ParallaxCollectionViewCell.swift */,
+				1874FBF223525FEA005659AB /* FeedOriginalHeaderReusableView.swift */,
+				1874FBF323525FEA005659AB /* FeedOriginalHeaderReusableView.xib */,
+				1874FBE7235249E2005659AB /* FeedHeaderCollectionViewCell.swift */,
+				1874FBE8235249E2005659AB /* FeedHeaderCollectionViewCell.xib */,
+				1874FBEE235254C1005659AB /* VideoCollectionViewCell.swift */,
+				1874FBEF235254C1005659AB /* VideoCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1874FBB323524546005659AB /* TheGreatParallax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1874FBDE23524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallax" */;
+			buildPhases = (
+				1874FBB023524546005659AB /* Sources */,
+				1874FBB123524546005659AB /* Frameworks */,
+				1874FBB223524546005659AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheGreatParallax;
+			productName = TheGreatParallax;
+			productReference = 1874FBB423524546005659AB /* TheGreatParallax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1874FBC923524548005659AB /* TheGreatParallaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1874FBE123524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallaxTests" */;
+			buildPhases = (
+				1874FBC623524548005659AB /* Sources */,
+				1874FBC723524548005659AB /* Frameworks */,
+				1874FBC823524548005659AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1874FBCC23524548005659AB /* PBXTargetDependency */,
+			);
+			name = TheGreatParallaxTests;
+			productName = TheGreatParallaxTests;
+			productReference = 1874FBCA23524548005659AB /* TheGreatParallaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1874FBD423524548005659AB /* TheGreatParallaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1874FBE423524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallaxUITests" */;
+			buildPhases = (
+				1874FBD123524548005659AB /* Sources */,
+				1874FBD223524548005659AB /* Frameworks */,
+				1874FBD323524548005659AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1874FBD723524548005659AB /* PBXTargetDependency */,
+			);
+			name = TheGreatParallaxUITests;
+			productName = TheGreatParallaxUITests;
+			productReference = 1874FBD523524548005659AB /* TheGreatParallaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1874FBAC23524546005659AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Larry Natalicio";
+				TargetAttributes = {
+					1874FBB323524546005659AB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					1874FBC923524548005659AB = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 1874FBB323524546005659AB;
+					};
+					1874FBD423524548005659AB = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 1874FBB323524546005659AB;
+					};
+				};
+			};
+			buildConfigurationList = 1874FBAF23524546005659AB /* Build configuration list for PBXProject "TheGreatParallax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1874FBAB23524546005659AB;
+			productRefGroup = 1874FBB523524546005659AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1874FBB323524546005659AB /* TheGreatParallax */,
+				1874FBC923524548005659AB /* TheGreatParallaxTests */,
+				1874FBD423524548005659AB /* TheGreatParallaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1874FBB223524546005659AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1874FBC423524547005659AB /* LaunchScreen.storyboard in Resources */,
+				1874FBC123524547005659AB /* Assets.xcassets in Resources */,
+				1874FBF1235254C1005659AB /* VideoCollectionViewCell.xib in Resources */,
+				1874FBF523525FEA005659AB /* FeedOriginalHeaderReusableView.xib in Resources */,
+				1874FBEA235249E2005659AB /* FeedHeaderCollectionViewCell.xib in Resources */,
+				1874FBBF23524546005659AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBC823524548005659AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBD323524548005659AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1874FBB023524546005659AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1874FBBC23524546005659AB /* ViewController.swift in Sources */,
+				1874FBF423525FEA005659AB /* FeedOriginalHeaderReusableView.swift in Sources */,
+				1874FBE9235249E2005659AB /* FeedHeaderCollectionViewCell.swift in Sources */,
+				18E04DCB2356AC4600852EB9 /* StretchyHeaderCollectionViewFlowLayout.swift in Sources */,
+				1874FBB823524546005659AB /* AppDelegate.swift in Sources */,
+				3CA9530B235ABE37009CEAF7 /* Constants.swift in Sources */,
+				1859FA6B2356B7C800BCCB02 /* ParallaxCollectionViewCell.swift in Sources */,
+				1874FBF0235254C1005659AB /* VideoCollectionViewCell.swift in Sources */,
+				1874FBF7235265E3005659AB /* Video.swift in Sources */,
+				1874FBBA23524546005659AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBC623524548005659AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1874FBCF23524548005659AB /* TheGreatParallaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1874FBD123524548005659AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1874FBDA23524548005659AB /* TheGreatParallaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1874FBCC23524548005659AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1874FBB323524546005659AB /* TheGreatParallax */;
+			targetProxy = 1874FBCB23524548005659AB /* PBXContainerItemProxy */;
+		};
+		1874FBD723524548005659AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1874FBB323524546005659AB /* TheGreatParallax */;
+			targetProxy = 1874FBD623524548005659AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1874FBBD23524546005659AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1874FBBE23524546005659AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1874FBC223524547005659AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1874FBC323524547005659AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1874FBDC23524548005659AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1874FBDD23524548005659AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1874FBDF23524548005659AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TheGreatParallax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1874FBE023524548005659AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TheGreatParallax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1874FBE223524548005659AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M72K4BBBN8;
+				INFOPLIST_FILE = TheGreatParallaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGreatParallax.app/TheGreatParallax";
+			};
+			name = Debug;
+		};
+		1874FBE323524548005659AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M72K4BBBN8;
+				INFOPLIST_FILE = TheGreatParallaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGreatParallax.app/TheGreatParallax";
+			};
+			name = Release;
+		};
+		1874FBE523524548005659AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M72K4BBBN8;
+				INFOPLIST_FILE = TheGreatParallaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheGreatParallax;
+			};
+			name = Debug;
+		};
+		1874FBE623524548005659AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M72K4BBBN8;
+				INFOPLIST_FILE = TheGreatParallaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sample.TheGreatParallaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheGreatParallax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1874FBAF23524546005659AB /* Build configuration list for PBXProject "TheGreatParallax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1874FBDC23524548005659AB /* Debug */,
+				1874FBDD23524548005659AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1874FBDE23524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1874FBDF23524548005659AB /* Debug */,
+				1874FBE023524548005659AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1874FBE123524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1874FBE223524548005659AB /* Debug */,
+				1874FBE323524548005659AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1874FBE423524548005659AB /* Build configuration list for PBXNativeTarget "TheGreatParallaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1874FBE523524548005659AB /* Debug */,
+				1874FBE623524548005659AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1874FBAC23524546005659AB /* Project object */;
+}
