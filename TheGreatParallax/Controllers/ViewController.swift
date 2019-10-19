@@ -16,6 +16,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    private var statusbarHeight: CGFloat! = UIApplication.shared.statusBarFrame.height
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private weak var originalHeaderReusableView: FeedOriginalHeaderReusableView?
@@ -149,7 +151,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 582 / 320 - 58)
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 568 / 320 - statusbarHeight)
         default:
             return CGSize.zero
         }

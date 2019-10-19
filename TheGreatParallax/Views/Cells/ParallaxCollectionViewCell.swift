@@ -70,6 +70,8 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
                                            left: parallaxLeftConstraint.constant,
                                            bottom: parallaxBottomConstraint.constant,
                                            right: parallaxRightConstraint.constant)
+        parallaxOffset = CGPoint(x: 0.5, y: 0.9)
+        applyParallax()
     }
     
     override func prepareForReuse() {

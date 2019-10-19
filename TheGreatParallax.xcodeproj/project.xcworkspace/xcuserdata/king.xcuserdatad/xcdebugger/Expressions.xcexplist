@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in StretchyHeaderCollectionViewFlowLayout.layoutAttributesForElements(in:):StretchyHeaderCollectionViewFlowLayout.swift">
+         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "attributes.frame.height">
+               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +15,23 @@
          <PersistentStrings>
             <PersistentString
                value = "parentPagingOffset">
+            </PersistentString>
+            <PersistentString
+               value = "cell.bounds.height">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.contentOffset.y">
+            </PersistentString>
+            <PersistentString
+               value = "cell.center.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in StretchyHeaderCollectionViewFlowLayout.layoutAttributesForElements(in:):StretchyHeaderCollectionViewFlowLayout.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "attributes.frame.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -37,14 +54,6 @@
          <PersistentStrings>
             <PersistentString
                value = "collectionView">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
