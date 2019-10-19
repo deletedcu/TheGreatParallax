@@ -16,8 +16,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    private var statusbarHeight: CGFloat! = UIApplication.shared.statusBarFrame.height
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private weak var originalHeaderReusableView: FeedOriginalHeaderReusableView?
@@ -134,9 +132,9 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
             // There should be no items in the original section.
             return .zero
         case .header:
-            return setSizeFotItemInCollectionView(itemsPerRow: 1.0, paddingSpace: 0.0, heightPerItem: 58)
+            return setSizeFotItemInCollectionView(itemsPerRow: 1.0, paddingSpace: 0.0, heightPerItem: Constants.defaultSectionHeight)
         case .videos:
-            return setSizeFotItemInCollectionView(itemsPerRow: 1.0, paddingSpace: 0.0, heightPerItem: 320)
+            return setSizeFotItemInCollectionView(itemsPerRow: 1.0, paddingSpace: 0.0, heightPerItem: Constants.defaultCellHeight)
         }
     }
     
@@ -151,7 +149,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * 568 / 320 - statusbarHeight)
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * Constants.headerImageHeight / Constants.headerImageWidth - Constants.statusbarHeight)
         default:
             return CGSize.zero
         }
