@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "collectionView">
+               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -17,13 +17,21 @@
                value = "cell.bounds.height">
             </PersistentString>
             <PersistentString
-               value = "cell.center.y">
+               value = "collectionView.contentOffset.y">
             </PersistentString>
             <PersistentString
                value = "collectionView.visibleCells">
             </PersistentString>
             <PersistentString
-               value = "collectionView.contentOffset.y">
+               value = "cell.center.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Constants.imageHeaderSize.getter:Constants.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "screenWidth">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -32,6 +40,14 @@
          <PersistentStrings>
             <PersistentString
                value = "attributes.frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -46,14 +62,6 @@
             </PersistentString>
             <PersistentString
                value = "parallaxFactor">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

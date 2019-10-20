@@ -153,7 +153,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch Section(section) {
         case .original:
-            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width * Constants.headerImageHeight / Constants.headerImageWidth - Constants.statusbarHeight)
+            return Constants.imageHeaderSize
         default:
             return CGSize.zero
         }

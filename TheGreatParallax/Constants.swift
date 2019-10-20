@@ -25,7 +25,7 @@ final class Constants {
     }
     
     static var headerImageHeight: CGFloat {
-        return 300
+        return 582
     }
     
     static var defaultSectionHeight: CGFloat {
@@ -34,6 +34,11 @@ final class Constants {
     
     static var defaultCellHeight: CGFloat {
         return 200
+    }
+    
+    static var imageHeaderSize: CGSize {
+        let height: CGFloat = screenWidth * headerImageHeight / headerImageWidth - statusbarHeight
+        return CGSize(width: screenWidth, height: height)
     }
     
     static var defaultParallaxOffset: CGPoint {
