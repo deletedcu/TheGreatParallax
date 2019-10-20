@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 final class Constants {
-    static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
+    static var statusbarHeight: CGFloat {
+        return UIApplication.shared.statusBarFrame.height
+    }
     
     static var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
