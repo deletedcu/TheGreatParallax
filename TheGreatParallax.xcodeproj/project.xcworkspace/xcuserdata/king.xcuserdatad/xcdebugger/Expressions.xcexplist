@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "topPadding">
+               value = "collectionView">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -14,16 +14,16 @@
          contextName = "ViewController.applyParallax():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "parentPagingOffset">
-            </PersistentString>
-            <PersistentString
                value = "cell.bounds.height">
             </PersistentString>
             <PersistentString
-               value = "collectionView.contentOffset.y">
+               value = "cell.center.y">
             </PersistentString>
             <PersistentString
-               value = "cell.center.y">
+               value = "collectionView.visibleCells">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.contentOffset.y">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -50,10 +50,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         contextName = "ViewController.collectionView(_:layout:referenceSizeForHeaderInSection:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "collectionView">
+               value = "topPadding">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

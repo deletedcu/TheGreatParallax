@@ -100,7 +100,10 @@ extension ViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.reuseIdentifier, for: indexPath) as! VideoCollectionViewCell
             let video = sampleVideos[indexPath.row]
             cell.configure(video: video)
-            applyParallax()
+            
+            let offsetX = (self.view.frame.width - self.view.frame.origin.x) / (2 * self.view.frame.width)
+            let offsetY = (cell.center.y + cell.bounds.height * 0.5 - collectionView.contentOffset.y) / (collectionView.bounds.height + cell.bounds.height)
+            cell.parallaxOffset = CGPoint(x: offsetX, y: offsetY)
             return cell
         }
     }
