@@ -20,6 +20,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     private weak var originalHeaderReusableView: FeedOriginalHeaderReusableView?
     
+    private var lastContentOffset: CGFloat = 0
+    private let offsetStep: CGFloat = 10
+    
     private var sampleVideos: [Video] {
         return [
             Video(title: "One", placeholderImage: UIImage(named: "1")!),
@@ -49,7 +52,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        applyParallax()
+        if (self.lastContentOffset + self.offsetStep < scrollView.contentOffset.y) {
+            self.lastContentOffset = scrollView.contentOffset.y
+            applyParallax()
+        }
+        else if (self.lastContentOffset - self.offsetStep > scrollView.contentOffset.y) {
+            self.lastContentOffset = scrollView.contentOffset.y
+            applyParallax()
+        }
     }
     
     func applyParallax() {

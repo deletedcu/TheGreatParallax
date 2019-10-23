@@ -70,6 +70,7 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
                                            left: parallaxLeftConstraint.constant,
                                            bottom: parallaxBottomConstraint.constant,
                                            right: parallaxRightConstraint.constant)
+        
         parallaxOffset = Constants.defaultParallaxOffset
     }
     
@@ -101,6 +102,7 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
         
         let pixelOffsetX = (1 - max(0, min(1, offset.x))) * 2 * parallaxFactor.x
         let pixelOffsetY = max(0, min(1, offset.y)) * 2 * parallaxFactor.y
+//        NSLog("pixelOffsetY %@", pixelOffsetY.description)
         
         self.parallaxLeftConstraint.constant = parallaxInitialEdge.left - pixelOffsetX
         self.parallaxRightConstraint.constant = parallaxInitialEdge.right + pixelOffsetX

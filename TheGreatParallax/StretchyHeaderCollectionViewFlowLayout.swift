@@ -24,6 +24,7 @@ final class StretchyHeaderCollectionViewFlowLayout: UICollectionViewFlowLayout {
                 let width = collectionView.frame.width
                 // 4. as contentOffsetY is -ve, the height will increase based on contentOffsetY
                 let height = attributes.frame.height - contentOffsetY
+                NSLog("contentOffsetY %@, height %@", contentOffsetY.description, height.description)
                 attributes.frame = CGRect(x: 0, y: contentOffsetY, width: width, height: height)
             }
         }

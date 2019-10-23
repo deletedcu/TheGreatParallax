@@ -38,7 +38,7 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdD-6a-NWo">
                                     <rect key="frame" x="0.0" y="92.5" width="240" height="30"/>
-                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" title="BUTTON TO TAP">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -71,6 +71,6 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="header" width="400" height="730"/>
+        <image name="header" width="800" height="1460"/>
     </resources>
 </document>

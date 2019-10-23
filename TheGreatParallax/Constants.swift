@@ -39,8 +39,8 @@ final class Constants {
     }
     
     static var imageHeaderSize: CGSize {
-        let height: CGFloat = screenWidth * headerImageHeight / headerImageWidth - statusbarHeight
-        return CGSize(width: screenWidth, height: height)
+//        let height: CGFloat = screenWidth * headerImageHeight / headerImageWidth - statusbarHeight
+        return CGSize(width: screenWidth, height: headerImageHeight)
     }
     
     static var defaultParallaxOffset: CGPoint {
