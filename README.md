@@ -8,8 +8,9 @@
   <img src="https://img.shields.io/badge/Supported%20by-Xcode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
 </p>
 
-![burns](parallax.gif)
-<img src="parallax.gif"/>
+<p align="center">
+    <img src="parallax.gif"/>
+</p>
 
 [Parallax scrolling](https://en.wikipedia.org/wiki/Parallax_scrolling) is a big UI design trend these days. It is a technique 
 where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and 
