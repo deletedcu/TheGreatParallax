@@ -9,6 +9,7 @@
 </p>
 
 ![burns](parallax.gif)
+<img src="parallax.gif"/>
 
 [Parallax scrolling](https://en.wikipedia.org/wiki/Parallax_scrolling) is a big UI design trend these days. It is a technique 
 where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and 
